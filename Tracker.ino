@@ -33,7 +33,7 @@ void loop() {
             // New GPS data available
             if (gps.location.isValid()) {
                 sendSMS();
-                delay(30000); // Wait for 30 seconds before sending another SMS
+                delay(3000); // Wait for 30 seconds before sending another SMS
             }
         }
     }

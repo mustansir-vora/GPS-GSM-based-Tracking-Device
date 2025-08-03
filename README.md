@@ -57,4 +57,4 @@ The following connections must be made to interface the components with the Ardu
 1.  **Initialization:** Upon startup, the Arduino UNO initializes the serial communication with the GPS and GSM modules. It sends AT commands to the GSM module to prepare it for sending text messages.
 2.  **GPS Data Acquisition:** The Arduino continuously reads data from the GPS module. The TinyGPS++ library is used to parse the raw NMEA data stream and extract meaningful information, such as latitude and longitude.
 3.  **SMS Transmission:** Once a valid GPS location is acquired, the Arduino compiles an SMS message that includes a Google Maps link with the coordinates. It then uses the GSM module to send this message to the pre-configured mobile number.
-4.  **Repeat:** The system waits for a set interval (e.g., 30 seconds) before sending the next location update, providing a near-real-time tracking solution.
+4.  **Repeat:** The system waits for a set interval (3 seconds) before sending the next location update, providing a near-real-time tracking solution.
